@@ -1,0 +1,41 @@
+{
+  "name": "straoura-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node src/server.ts",
+    "build-ts": "tsc",
+    "start": "ts-node src/server.ts",
+    "build": "npm run lint && npm run build-ts",
+    "deploy": "npm run build && sls deploy",
+    "checkit": "npm run build && sls offline",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:eslint:fix": "eslint --fix 'src/**/*.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.0.2",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.0",
+    "serverless-offline": "^4.10.5",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@types/aws-serverless-express": "^3.3.1",
+    "@types/cors": "^2.8.5",
+    "aws-sdk": "^2.459.0",
+    "aws-serverless-express": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0",
+    "sequelize-typescript": "^0.6.11"
+  }
+}
