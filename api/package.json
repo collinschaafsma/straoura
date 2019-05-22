@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.2",
     "@types/node": "^12.0.2",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
@@ -33,6 +34,7 @@
     "aws-serverless-express": "^3.3.6",
     "cors": "^2.8.5",
     "express": "^4.17.0",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.5",
     "sequelize": "^5.8.6",
     "sequelize-cli": "^5.4.0",
